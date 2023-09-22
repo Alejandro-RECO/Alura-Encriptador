@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300&display=swap');
+:root {
+    --main-bg-color: #D8DFE8;
+    --text-color: #0A3871;
+    --color-white: #FFFFFF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    background-color: var(--main-bg-color);
+    padding: 20px;
+}
+.Contenedor{
+ display: flex;
+ justify-content: space-between;
+}
+.section1{
+    width: 100%;
+}
+.header{
+    padding-bottom: 30px;
+}
+.contenedorInfo{
+    margin: 30px;
+    padding-left: 80px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cajaTexto{
+    border: none;
+    outline: none;
+    text-decoration: none;
+    width: 380px;
+    height:380px;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    background-color: var(--main-bg-color);
+    text-wrap: wrap;
+
+}
+.cajaTexto::placeholder{
+    color: var(--text-color);
+}
+.alerta{
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+.contenedorBotones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.btnEncriptar{
+    background: var(--text-color);
+    border: none;
+    height: 40px;
+    width: 220px;
+    border-radius: 1rem;
+    color: var(--color-white);
+    font-size: 12px;   
+    padding: 10px;
+    cursor: pointer;
+}
+.btnDesencriptar{
+    background: var(--main-bg-color);
+    border: solid 1px var(--text-color);
+    height: 40px;
+    width: 220px;
+    border-radius: 1rem;
+    color: var(--text-color);
+    font-size: 12px;
+    font-weight: bolder;   
+    padding: 10px;
+    cursor: pointer;
+}
+
+.section2{
+    display: flex; 
+    background: var(--color-white);
+    padding: 40px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    text-align: center;
+    width: 35%;
+}
+
+.comntenedor1{
+    margin-bottom: 20px;
+}
+.contenedor2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.title{
+    width: 70%;
+    font-size: 20px;
+    text-wrap: wrap;
+}
+
+.contenedorResultado{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--text-color);
+    width: 100%;
+    height: full;
+}
+.ocultar{
+    display: none;
+}

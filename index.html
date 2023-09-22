@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador | Alura</title>
+</head>
+<body>
+    <div class="Contenedor">
+        <section class="section1">
+            <header class="header">
+                <img class="logo" src="img/LogoAlura.png" alt="LogoAlura">
+            </header>
+                <div class="contenedorInfo">
+                    <div class="ontenedorCajaTexto">
+                        <input id="textoEscrito" class="cajaTexto" placeholder="Ingrese el texto aqui"></input>
+                    </div>
+                    <div class="info">
+                        <div class="alerta">
+                            <img src="img/alerta.png" alt="Alerta">
+                            <p>Solo letras minúsculas y sin acentos</p>
+                        </div>
+                        <div class="contenedorBotones">
+                            <input onclick="Encriptar()" id="encriptarTexto" type="button" class="btnEncriptar" value="Encriptar">
+                            <input onclick="Desencriptar()" id="desEncriptarTexto" type="button" class="btnDesencriptar" value="Desencriptar">
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="section2">
+            <div class="contenedorResultado">
+                <p id="resultado" class="textoResultado"></p>
+            </div>
+            <div id="contenedor" class="contenedor">
+                <div class="comntenedor1">
+                    <img class="portada" src="img/portada.png" alt="portada">
+                </div>
+                <div class="contenedor2">
+                    <h5 class="title">Ningún mensaje fue encontrado</h5>
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </div>
+
+        </section>
+    </div>
+<script src="main.js"></script>
+</body>
+</html>
